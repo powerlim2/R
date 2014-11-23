@@ -3,10 +3,24 @@
 # Date   : 2014.08.13
 
 
+# --------------------------------------------------------------------------------------------------------
+# Background:
+#
+# We often face panel data. In this case, my coworker was asking if we can systematically perform
+# ITS (interrupted time series analysis) to measure maketing campaign effectiveness for each medium.
+# We choose R as a main analysis tool and tested computational efficiencies for 3 different approaches.
+#
+# Option: (1) by, (2) plyr, (3) for loop
+#
+# Conclusion:
+# by() function is slightly more efficient than dlply(). 'For loop' is significantly slower than 'by'.
+# The efficiency difference was larger with the actual data.
+# --------------------------------------------------------------------------------------------------------
+
 # Read an example Panle Data
 library(foreign)  # for read.dta()
 library(forecast)  # for auto.arima()
-panel <- read.dta("http://dss.princeton.edu/training/Panel101.dta")
+panel <- read.dta("http://dss.princeton.edu/training/Panel101.dta")  # example data
 panel <- panel[panel$country %in% c("A", "B", "C"), ]
 panel <- within(panel, {
        country <- factor(country, levels = c("A", "B", "C"))
