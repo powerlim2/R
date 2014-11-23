@@ -2,6 +2,9 @@ R codes
 =======
 
 When it comes to perform statistical analysis, data mining, visualization and sometimes even web application development, R has been my first choice of language. 
+Many times, I wrote a code to help friends and co-workers solve R related problems efficiently. I decide to share some of the codes here. I hope you find them useful :)
+
+
 
 ## List of Activities
 
