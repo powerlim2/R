@@ -5,7 +5,7 @@ When it comes to perform statistical analysis, data mining, visualization and so
 
 ## List of Activities
 
-1. **THREE_ARMIA.R**
-	* 3 different ways to run ARIMA on multilevel data and the effeciency comparison.
+1. **[THREE_ARMIA.R](https://github.com/powerlim2/R/blob/master/R/THREE_ARIMA.R)**
+	* Present 3 different ways to perform ARIMA analysis on multilevel data and compare the computational efficiency.
 
 
