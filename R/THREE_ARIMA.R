@@ -8,7 +8,7 @@
 #
 # We often face panel data. In this case, my coworker was asking if we can systematically perform
 # ITS (interrupted time series analysis) to measure maketing campaign effectiveness for each medium.
-# We choose R as a main analysis tool and tested computational efficiencies for 3 different approaches.
+# We chose R as a main analysis tool and tested computational efficiencies for 3 different approaches.
 #
 # Option: (1) by, (2) plyr, (3) for loop
 #
