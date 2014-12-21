@@ -12,13 +12,11 @@ Many times, I wrote a code to help friends and co-workers solve R related proble
 	* Present 3 different ways to perform ARIMA analysis on multilevel data and compare the computational efficiency. 
 	When running arima(), it turns out that 'by()' is more efficient than 'dlply()' and 'for loop'.
 	
-
-1. **[DATA_WRANGLING_ADD_COLUMNS.R]**
+2. **[DATA_WRANGLING_ADD_COLUMNS.R](https://github.com/powerlim2/R/blob/master/R/DATA_WRANGLING_ADD_COLUMNS.R)**
 	* An example of Time-Series data manipulation: Marketing data.
 	* Generate additional n columns: if the value is positive, give the time when the value happens, otherwise give 0.
 
-
-1. **[LIST_TO_TRANSACTIONS.R]**
+3. **[LIST_TO_TRANSACTIONS.R](https://github.com/powerlim2/R/blob/master/R/LIST_TO_TRANSACTIONS.R)**
 	* Data Wrangling function to perform Market Basket Analysis using "arules" package. 
 	* We can easily make basket rows without worrying about sparsity of data within database using `GROUP_CONCAT()` function.
     * Using database to build an input feasure set is especially recommended when the size of raw data is large (100+ GB).
