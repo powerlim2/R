@@ -1,12 +1,13 @@
 # Data Wrangling R function
+# Author: Joon Lim
 
+library(assertthat)
 
 # Objective: add additional columns based on the columns in variables
 # The rule: if the value is positive, give the time when the value happens, otherwise give 0.
 # Information 1: the number of columns varies by data
 # Information 2: all data has 'time' column
 attach.newVariable <- function(df) {
-  library(assertthat)
   assert_that(class(df) == "data.frame" || class(df) == "matrix")
   assert_that("time" %in% colnames(df))
   trans <- function(x) ifelse(x > 0, df[, "time"], 0)

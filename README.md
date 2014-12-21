@@ -13,5 +13,15 @@ Many times, I wrote a code to help friends and co-workers solve R related proble
 	When running arima(), it turns out that 'by()' is more efficient than 'dlply()' and 'for loop'.
 	
 
+1. **[DATA_WRANGLING_ADD_COLUMNS.R]**
+	* An example of Time-Series data manipulation: Marketing data.
+	* Generate additional n columns: if the value is positive, give the time when the value happens, otherwise give 0.
 
 
+1. **[LIST_TO_TRANSACTIONS.R]**
+	* Data Wrangling function to perform Market Basket Analysis using "arules" package. 
+	* We can easily make basket rows without worrying about sparsity of data within database using `GROUP_CONCAT()` function.
+    * Using database to build an input feasure set is especially recommended when the size of raw data is large (100+ GB).
+	* The output of `GROUP_CONCAT()` gives us (basket_id, "item 1, item 2, item 3, ..., item N")
+	However, due to the quotation marks, default import in R will recognize number of items as just 1 item with long name.
+	* This approach handles such problem effectively and enable us to run Apriori algorithm efficiently in R.
