@@ -32,8 +32,8 @@ data.opt <- list(
 rm.quotation <- function(input.list) {
   lapply(input.list, function(r) {
     row <- unlist(strsplit(r, ","))  # split
-    row <- gsub("^\\s+|\\s+$", "", row)  # strip
-    }
+    row <- gsub("^\\s+|\\s+$|^\\\"|\\\"$", "", row)  # strip
+  }
   )
 }
 
@@ -67,3 +67,15 @@ print(same.list(data, data.opt))
 data <- as(data, "transactions")
 inspect(data)  # check the result
 
+
+
+
+# the full example code
+main <- c()
+dir.path <- "<<path_to_your_directory_of_files_downloaded_from_BQ>>"
+for (i in list.files(dir.path)) {
+  file.path <- paste(dir.path,i, sep = "/")
+  main <- append(main, readLines(file.path)[-1])  # take out the header row
+}
+main <- rm.quotation(as.list(main))
+input <- as(main, "transactions")
