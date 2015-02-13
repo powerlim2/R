@@ -24,7 +24,7 @@ Many times, I wrote a code to help friends and co-workers solve R related proble
 	However, due to the quotation marks, default import in R will recognize number of items as just 1 item with long name.
 	* This approach handles such problem effectively and enable us to run Apriori algorithm efficiently in R.
 
-4. **[Sample Size Determination for proportions]**
+4. **[Sample Size Determination for proportions](https://github.com/powerlim2/R/blob/master/R/SampleSize.R)**
 	* Calculate the appropriate sample size for A/B testing based on alpha, power, sample ratio, props  
 	* Reference: [http://web.stanford.edu/~kcobb/hrp259/lecture11](http://web.stanford.edu/~kcobb/hrp259/lecture11.ppt)
 	
