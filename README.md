@@ -23,3 +23,8 @@ Many times, I wrote a code to help friends and co-workers solve R related proble
 	* The output of `GROUP_CONCAT()` gives us (basket_id, "item 1, item 2, item 3, ..., item N")
 	However, due to the quotation marks, default import in R will recognize number of items as just 1 item with long name.
 	* This approach handles such problem effectively and enable us to run Apriori algorithm efficiently in R.
+
+4. **[Sample Size Determination for proportions]**
+	* Calculate the appropriate sample size for A/B testing based on alpha, power, sample ratio, props  
+	* Reference: [http://web.stanford.edu/~kcobb/hrp259/lecture11](http://web.stanford.edu/~kcobb/hrp259/lecture11.ppt)
+	
